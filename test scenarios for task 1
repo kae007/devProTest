@@ -1,0 +1,38 @@
+Basic Logging Functionality:
+
+Scenario 1: Logging a message with INFO level.
+
+Test Steps:
+Call the log_message function with a sample message "User logged in" and "INFO" level.
+Verify that the message is logged to the specified file "application.log" with the correct timestamp and log level.
+
+Scenario 2: Logging a message with WARNING level.
+
+Test Steps:
+Call the log_message function with a sample message "Failed login attempt" and "WARNING" level.
+Verify that the message is logged to the specified file "application.log" with the correct timestamp and log level.
+Appending Logs:
+
+Scenario: Logging multiple messages consecutively.
+
+Test Steps:
+Call the log_message function multiple times with different messages and levels.
+Verify that all messages are logged sequentially in the "application.log" file without overwriting previous entries.
+Check if each message has the correct timestamp and log level.
+Error Handling:
+
+Scenario 1: Invalid filename.
+
+Test Steps:
+Call the log_message function with an invalid filename (e.g., an empty string).
+Verify that the function throws an error or handles the invalid filename gracefully without crashing the application.
+Scenario 2: Missing message.
+
+Test Steps:
+Call the log_message function with an empty message.
+Verify that the function throws an error or handles the missing message gracefully without crashing the application.
+Scenario 3: Invalid log level.
+
+Test Steps:
+Call the log_message function with an invalid log level (e.g., "INVALID").
+Verify that the function throws an error or handles the invalid log level gracefully without crashing the application.

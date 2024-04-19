@@ -1,0 +1,8 @@
+const fs = require('fs');
+
+function log_message(filename, message, level) {
+    const timestamp = new Date().toString().replace('T', ' ').replace(/\..+/, '');
+    const log_entry = `[${timestamp}] [${level}] ${message}\n`;
+
+    fs.appendFileSync(filename, log_entry);
+}
